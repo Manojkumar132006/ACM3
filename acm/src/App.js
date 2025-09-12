@@ -45,9 +45,9 @@ function App() {
               }
             })
           }
+          <button onClick={()=>setCount(prev => prev+10)}>Load More</button>
           </div>
           <div className='formdiv'>
-            <button onClick={()=>setCount(prev => prev+10)}>Load More</button>
             <br/>
             <button onClick={()=>setToggle(prev => !prev)}>{toggle?'Hide Form':'Add Post'}</button>
             {toggle && <form className='postform' onSubmit={(e)=>{
